@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Luminaz Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Luminaz Insights</h1>
+            <p>Welcome back, [Client Name]!</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#apply-service">Apply for Service</a></li>
+                <li><a href="#service-history">Service History</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#help-center">Help Center</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <section id="profile" class="profile-section">
+            <h2>Client Profile</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+                
+                <button type="submit">Edit Profile</button>
+            </form>
+            <div class="account-settings">
+                <h3>Account Settings</h3>
+                <button>Change Password</button>
+                <button>Notification Preferences</button>
+                <button>Privacy Settings</button>
+            </div>
+        </section>
+        
+        <section id="apply-service" class="apply-service-section">
+            <h2>Apply for Service</h2>
+            <form>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="analysis">Sentiment Analysis</option>
+                    <option value="reporting">Reporting</option>
+                    <option value="consulting">Consulting</option>
+                </select>
+                
+                <label for="details">Details:</label>
+                <textarea id="details" name="details"></textarea>
+                
+                <button type="submit">Apply</button>
+            </form>
+        </section>
+        
+        <section id="service-history" class="service-history-section">
+            <h2>Service History</h2>
+            <div class="search-filter">
+                <input type="text" placeholder="Search Projects...">
+                <button>Search</button>
+            </div>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <p>Status: Completed</p>
+                    <p>Details: Lorem ipsum dolor sit amet...</p>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>Status: In Progress</p>
+                    <p>Details: Lorem ipsum dolor sit amet...</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="downloads" class="downloads-section">
+            <h2>Downloads</h2>
+            <div class="file-list">
+                <div class="file">
+                    <h3>Report 1</h3>
+                    <button>Download</button>
+                </div>
+                <div class="file">
+                    <h3>Data File 1</h3>
+                    <button>Download</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="feedback" class="feedback-section">
+            <h2>Feedback</h2>
+            <form>
+                <label for="feedback-text">Your Feedback:</label>
+                <textarea id="feedback-text" name="feedback-text"></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+        
+        <section id="notifications" class="notifications-section">
+            <h2>Notifications</h2>
+            <p>You have no new notifications.</p>
+        </section>
+        
+        <section id="help-center" class="help-center-section">
+            <h2>Help Center</h2>
+            <p>If you have any questions, please visit our <a href="#">FAQ</a> or contact <a href="#">support</a>.</p>
+        </section>
+        
+        <section id="logout" class="logout-section">
+            <button>Logout</button>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #0056b3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    animation: fadeIn 2s;
+}
+
+.hero p {
+    font-size: 1.5em;
+    animation: fadeIn 3s;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    margin-bottom: 15px;
+}
+
+.service .learn-more-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service .learn-more-btn:hover {
+    background-color: #004099;
+}
+
+/* Project Cycle Section */
+.project-cycle {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-cycle h2 {
+    margin-bottom: 20px;
+}
+
+.cycle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cycle-step {
+    background: #eee;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.cycle-step:hover {
+    transform: scale(1.05);
+}
+
+/* Project Tools Section */
+.project-tools {
+    background: url('tools-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.project-tools h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sub-section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.sub-section:hover {
+    transform: scale(1.05);
+}
+
+/* Project Showcase Section */
+.project-showcase {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-showcase h2 {
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-actions .download-link {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-actions .download-link:hover {
+    background-color: #004099;
+}
+
+.load-more-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.load-more-btn:hover {
+    background-color: #004099;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta input[type="email"] {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.cta button {
+    background-color: #004099;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #003080;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #004099;
+}
+
+footer .social-media img {
+    width: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services, .cycle-container, .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

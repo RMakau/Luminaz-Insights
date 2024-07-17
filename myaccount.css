@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 10px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.profile-info, .contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    flex: 1;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.personal-info {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.edit-profile-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.project-list li, .file-list li, .notification-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="file"],
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit-btn, .pay-btn, .submit-feedback-btn, .search-btn, .logout-btn, .verify-otp-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover, .pay-btn:hover, .submit-feedback-btn:hover, .search-btn:hover, .logout-btn:hover, .verify-otp-btn:hover {
+    background-color: #0056b3;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.payment-methods i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile-info, .contact-options {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal-info {
+        margin-left: 0;
+    }
+
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+}
